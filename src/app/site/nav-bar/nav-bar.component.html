@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <style>
+        .hero {
+            background: url('hero-bg.jpg') center center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="\assets\image.png" height="18px" width="20px" class="pa">
+              DoctorAppointment</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/doctors">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/fotter">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <app-login></app-login>        </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</body>
+</html>
