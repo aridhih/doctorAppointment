@@ -19,12 +19,12 @@ export class LoginComponent {
 
   }
   public getData(){
-    console.log(this.username + " " + this.password)
+    console.log(this.username + "   " + this.password)
   }
 
 
-  validateInput(){
-
-
+  ValidateInput(event: any, type: string) {
+    this.error[type] = event.target.value.length === 0 ? `${type} is required` : '';
+    this.error.isError = event.target.value.length === 0;
   }
 }

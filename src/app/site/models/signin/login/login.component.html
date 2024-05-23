@@ -13,11 +13,16 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-
+        <div class="modal-body">
         <label for="username">Username</label>
-        <input type="text" [(ngModel)]="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
+        <input type="text" [(ngModel)]="username" (keyup)="ValidateInput($event,'username')" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
+        <span class="text-danger">{{error.username}}</span>
+        </div>
+        <div class="modal-body">
         <label for="username">Password</label>
-        <input type="password"[(ngModel)]="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password">
+        <input type="password" [(ngModel)]="password"  (keyup)="ValidateInput($event,'password')" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password">
+        <span class="text-danger">{{error.password}}</span>
+        </div>
 
     </div>
 
